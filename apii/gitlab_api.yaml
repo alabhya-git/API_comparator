@@ -1,0 +1,16 @@
+openapi: 3.0.3
+info:
+  title: GitLab-like API
+  version: 1.0.0
+paths:
+  /projects:
+    get:
+      summary: List projects
+      description: Retrieve a list of projects for the authenticated user
+    post:
+      summary: Create project
+      description: Create a new project for the authenticated user
+  /projects/{id}:
+    get:
+      summary: Get project details
+      description: Fetch details of a specific project

@@ -1,0 +1,16 @@
+openapi: 3.0.3
+info:
+  title: GitHub-like API
+  version: 1.0.0
+paths:
+  /repos:
+    get:
+      summary: List repositories
+      description: Retrieve a list of repositories for the authenticated user
+    post:
+      summary: Create repository
+      description: Create a new repository for the authenticated user
+  /repos/{owner}/{repo}:
+    get:
+      summary: Get repository details
+      description: Fetch details of a specific repository
